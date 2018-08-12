@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-color: #fcfcfc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top {
+  display: flex;
+}
+
+.search {
+  height: auto;
+  margin: 20px 2.5% 20px auto;
+  border: 1px solid #ddd;
+  width: 50%;
+  padding: .5em;
+}
+
+#title {
+    color: #4a4a4a;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #fff;
+    border: 2px solid #dfdfdf;
+    padding: 1em;
+    text-transform: capitalize;
+    transition: border-color .75s;
+}
+
+.email,
+#modal-email{
+  text-transform: lowercase;
+}
+
+.image-container{
+    margin-right: 1em;
+    height: 100px;
+    width: 100px;
+}
+
+.profile-image {
+    display: block;
+    border-radius: 50%;
+}
+
+.name {
+    margin: .5em 0 0;
+    color: #404a51;
+}
+
+.modal-top {
+  border-bottom: 2px solid #dfdfdf;
+  width: 100%;
+}
+
+.modal-top h1 {
+  margin: .25em .25em;
+}
+
+.information p,
+.modal-top p,
+.modal-bottom p{
+    margin: .25em 0;
+    color: #878d90;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.modal-flex {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+}
+
+.modal-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.close-button {
+    width: 100%;
+    line-height: 1.5rem;
+    text-align: right;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    color: darkgray;
+    display: block;
+}
+.close-button:hover {
+    color: black;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    display: block;
+    margin: auto 0;
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-top,
+.modal-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .25em;
+}
+
+i:hover {
+  cursor: pointer;;
+}
+
+#modal-image {
+  border-radius: 50%;
+}
+
+.card:hover {
+  border-color: rgb(87, 99, 102);
+}

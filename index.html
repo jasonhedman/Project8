@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Employee Directory</title>
+  </head>
+  <body>
+    <div class="top">
+      <h1 id = 'title'>Employee Directory</h1>
+      <input type="text" name="seach" value="" class = 'search' placeholder = 'Search...' id = 'search'>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <span class = 'close-button'>&times;</span>
+        <div class="modal-flex">
+          <i class = 'arrow-left arrow'></i>
+          <div class="modal-body">
+            <div class="modal-top">
+              <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="" id = 'modal-image'>
+              <h1 id = 'modal-name'></h1>
+              <p id = 'modal-email'></p>
+              <p id ='modal-city'></p>
+            </div>
+            <div class="modal-bottom">
+              <p id = 'modal-phone'></p>
+              <p id = 'modal-address'></p>
+              <p id = 'modal-birthday'></p>
+            </div>
+          </div>
+          <i class = 'arrow-right arrow'></i>
+        </div>
+      </div>
+    </div>
+    <div id="grid">
+
+    </div>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
